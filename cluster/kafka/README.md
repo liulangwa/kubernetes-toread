@@ -55,10 +55,8 @@ To create a pod that you can use as a Kafka client run the following commands:
 ### download chart
 
 下载chart到本地，这步可以省略
-
 ```
 helm pull bitnami/kafka
-
 ```
 
 ### list helm instance
@@ -71,13 +69,10 @@ helm list --all-namespaces
 
 ```
 helm uninstall kafka -n middleware
-
 ```
 
 
 ### ref
 >https://github.com/bitnami/charts
-
 >https://helm.sh/zh/docs/helm/helm_pull/
-
 >https://artifacthub.io/packages/helm/bitnami/kafka
