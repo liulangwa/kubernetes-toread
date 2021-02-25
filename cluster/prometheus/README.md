@@ -23,6 +23,13 @@ kube-prometheus提供了基于Prometheus和Prometheus Operator的完整集群监
 
 kube-prometheus收集了Kubernetes清单，Grafana仪表板和Prometheus规则，以及文档和脚本。
 
+## VictoriaMetrics
+
+https://victoriametrics.github.io/Cluster-VictoriaMetrics.html
+
+victoriametrics 是一个快速高效&&可扩展的时序数据库
+用来作为 Prometheus 长期存储的成熟方案。
+
 ## 下载安装
 
 ```
@@ -49,8 +56,19 @@ http://grafana.local.io:8080/login
 
 使用admin/admin登录后修改密码
 
+## prometheus ingress
+```
+k apply -f prometheus-ingress.yaml
+```
 
+http://prometheus.local.io:8080/
 
+## 
+
+```
+kubectl  apply -f alertmanager-ingress.yaml
+```
+http://alertmanager.local.io:8080/
 
 ## 卸载
 ```
@@ -76,3 +94,9 @@ grafana/grafana:7.3.7
 ## ref
 >http://docs.kubernetes.org.cn/703.html
 >https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/exposing-prometheus-alertmanager-grafana-ingress.md
+>https://jsonnet.org/
+>https://yunlzheng.gitbook.io/prometheus-book/parti-prometheus-ji-chu/promql/prometheus-metrics-types
+>https://oldcamel.run/post/victoriametrics-hui-zong-duo-ge-prometheus-zhi-biao-san-kube-prometheus-an-zhuang/
+>https://my.oschina.net/u/4148359/blog/4531605
+
+
