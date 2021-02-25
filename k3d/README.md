@@ -20,7 +20,7 @@ https://github.com/rancher/k3d/releases
 ```
 
 k3d cluster create alex
-
+export KUBECONFIG="$(k3d kubeconfig write alex)"
 kubectl config use-context k3d-alex
 kubectl cluster-info
 
@@ -36,7 +36,7 @@ docker ps  --no-trunc
 ### import images
 
 ```
-k3d image import -c alex nginx:1.19.1-alpine
+k3d image import -c alex nginx:1.19.1-alpine quay.io/brancz/kube-rbac-proxy:v0.8.0 quay.io/prometheus/node-exporter:v1.1.0 quay.io/prometheus/alertmanager:v0.21.0
 
 ```
 

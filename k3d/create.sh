@@ -2,7 +2,7 @@
 
 
 export K3S_CLUSTER_NAME="alex"
-export K3S_WORKER_NUMBER=1
+export K3S_WORKER_NUMBER=2
 export K3S_EXTERNAL_IP=`ip -4 addr show eth0 | grep inet | awk '{print $2}' | cut -d'/' -f1`
 
 
