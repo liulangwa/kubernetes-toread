@@ -12,6 +12,7 @@ EOF
 
 
 yum install -y kubectl
+yum install -y bash-completion
 
 cat <<EOF >> ~/.bashrc
 source <(kubectl completion bash)

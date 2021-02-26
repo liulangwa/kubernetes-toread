@@ -1,13 +1,17 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kibana-ingress
+  name: grafana-ingress
   namespace: monitoring
 spec:
   rules:
-  - host: grafana.local.io
+  - host: grafana.cloud.local
     http:
       paths:
-      - backend:
-          serviceName: grafana
-          servicePort: 3000
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: grafana
+            port: 
+              number: 3000

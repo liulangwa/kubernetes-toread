@@ -52,7 +52,7 @@ alertmanager-alertmanager.yaml 修改replicas为1
 kubectl apply -f grafana-ingress.yaml
 ```
 
-http://grafana.local.io:8080/login
+http://grafana.cloud.local:8080/login
 
 使用admin/admin登录后修改密码
 
@@ -61,14 +61,14 @@ http://grafana.local.io:8080/login
 k apply -f prometheus-ingress.yaml
 ```
 
-http://prometheus.local.io:8080/
+http://prometheus.cloud.local:8080/
 
 ## 
 
 ```
 kubectl  apply -f alertmanager-ingress.yaml
 ```
-http://alertmanager.local.io:8080/
+http://alertmanager.cloud.local:8080/
 
 ## 卸载
 ```
