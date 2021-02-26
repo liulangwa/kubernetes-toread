@@ -98,5 +98,6 @@ grafana/grafana:7.3.7
 >https://yunlzheng.gitbook.io/prometheus-book/parti-prometheus-ji-chu/promql/prometheus-metrics-types
 >https://oldcamel.run/post/victoriametrics-hui-zong-duo-ge-prometheus-zhi-biao-san-kube-prometheus-an-zhuang/
 >https://my.oschina.net/u/4148359/blog/4531605
+>https://sandstorm.de/de/blog/post/running-cilium-in-k3s-and-k3d-lightweight-kubernetes-on-mac-os-for-development.html
 
 
