@@ -2,20 +2,22 @@
 
 kubernetes(containerd) in docker
 
-### download
+## download
 
 https://github.com/rancher/k3d
 
 https://github.com/rancher/k3d/releases
 
-### install 
+## install kubectl
+
+## install k3d
 ```
     #wget https://github.com/rancher/k3d/releases/download/v4.2.0/k3d-linux-amd64
     #mv k3d-linux-amd64 /usr/local/bin/k3d
     #k3d version
 ```
 
-### create k3s cluster
+## create k3s cluster
 
 ```
 
@@ -26,14 +28,14 @@ kubectl cluster-info
 
 ```
 
-### show docker info
+## show docker info
 
 ```
 docker ps  --no-trunc
 
 ```
 
-### import images
+## import images
 
 ```
 k3d image import -c alex nginx:1.19.1-alpine quay.io/brancz/kube-rbac-proxy:v0.8.0 quay.io/prometheus/node-exporter:v1.1.0 quay.io/prometheus/alertmanager:v0.21.0
@@ -41,5 +43,7 @@ k3d image import -c alex nginx:1.19.1-alpine quay.io/brancz/kube-rbac-proxy:v0.8
 ```
 
 
-### ref
+## ref
 >https://k3d.io/
+>https://kubernetes.io/docs/tasks/tools/install-kubectl/
+>https://zhuanlan.zhihu.com/p/59048502
