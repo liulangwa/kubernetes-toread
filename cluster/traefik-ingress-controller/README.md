@@ -79,3 +79,5 @@ Thank you for using nginx.
 
 ## ref
 >https://cloud.tencent.com/developer/article/1739632
+>https://doc.traefik.io/traefik/routing/providers/kubernetes-ingress/
+>https://artifacthub.io/packages/helm/traefik/traefik
