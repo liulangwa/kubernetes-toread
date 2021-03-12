@@ -41,8 +41,9 @@ ARCH=amd64 INSTALL_K3S_SKIP_DOWNLOAD=false K3S_TOKEN=xxxtoken  K3S_URL="https://
 
 
 
+### offline install
 
-
+offline-install-agent.sh和offline-install-master.sh是离线安装的一个例子，需要其他下载好`k3s`和`依赖的镜像`
 
 
 
@@ -50,5 +51,6 @@ ARCH=amd64 INSTALL_K3S_SKIP_DOWNLOAD=false K3S_TOKEN=xxxtoken  K3S_URL="https://
 >https://k3s.io/
 >https://rancher.com/docs/k3s/latest/en/installation/ha/
 >https://rancher.com/docs/k3s/latest/en/installation/install-options/
+>https://rancher.com/docs/k3s/latest/en/installation/install-options/server-config/
 
 
