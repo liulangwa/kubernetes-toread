@@ -1,7 +1,7 @@
 # ingress-controller
 
-如果没有像k3d/k3s一样预置ingress-controller ，需要安装一个controller 定义的ingress才能生效。
-如果在k3s中想安装其他的ingress-controller 部署k3s时候需要通过安装选项禁用自带的traefix
+如果没有像k3d/k3s一样预置`ingress-controller` ，需要安装一个`ingress-controller` 定义的Ingress才能生效。
+如果在k3s/k3d中想安装其他的`ingress-controller` 部署k3s时候需要通过安装选项`禁用`自带的 `traefik`
 ## download
 
 ```
