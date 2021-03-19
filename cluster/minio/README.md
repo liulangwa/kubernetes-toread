@@ -124,7 +124,7 @@ https://localhost:9000/minio/login 登录 输入创建时候的用户名和密�
 ```
 kubectl port-forward -n minio-tenant service/minio-tenant-console --address 0.0.0.0 9443:9443
 ```
-https://localhost:9000/minio/login 登录 输入创建时候的用户名和密码
+https://localhost:9443/login 登录 输入创建时候的用户名和密码
 
 ### 说明
 
