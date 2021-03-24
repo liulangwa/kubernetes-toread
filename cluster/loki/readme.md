@@ -53,6 +53,10 @@ The http URL field should be the address of your Loki server. For example, when 
 To see the logs, click Explore on the sidebar, select the Loki datasource in the top-left dropdown, and then choose a log stream using the Log labels button.
 Learn more about querying by reading about Loki’s query language LogQL.
 
+![loki-datasource](./grafana-loki.png)
+
+
+
 ### ref
 >https://grafana.com/docs/loki/latest/installation/helm/
 >https://grafana.com/docs/loki/latest/getting-started/grafana/
